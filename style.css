@@ -31,12 +31,34 @@ html, body {
     z-index: 1000;
    
 }
+
 .nav-left a, .nav-right a {
     color: #0e1111;
     text-decoration: none;
     margin: 0 10px;
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 15px;
+      height: auto;
+    }
+  
+    .nav-left a, .nav-right a {
+      font-size: 12px; 
+      margin: 5px 5px;
+    }
+  
+    .nav-left, .nav-right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
 
+  }
 .card-row {
     display: flex;
     justify-content: space-around; 
